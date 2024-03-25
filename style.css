@@ -31,7 +31,7 @@ a {
 .header {
   display: flex;
   position: fixed;
-  padding: 0 3rem;
+  padding: 1rem 2rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -50,6 +50,10 @@ a {
 div.logo {
   display: flex;
   align-items: center;
+}
+
+#logo {
+  width: 80px;
 }
 
 ul.links {
@@ -129,17 +133,33 @@ div.section_container {
 
 @media(max-width: 992px) {
   .header {
-    padding: 0.8rem;
+    padding: 1rem;
   }
   .navbar .links {
     display: flex;
     font-size: 1rem;
   }
+
+  #logo {
+    width: 70px;
+    transition: 400ms ease;
+  }
 }
 /* show icons */
 @media (max-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
   .icons {
     display: inline-flex;
+    padding: 2rem;
+    position: absolute;
+    top:0;
   }
 
   #check:checked~.icons #menu-icon {
@@ -155,10 +175,9 @@ div.section_container {
   }
 
   .navbar {
-    /* display: flex; */
     justify-content: center;
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
     height: 0;
     overflow: hidden;
@@ -182,13 +201,13 @@ div.section_container {
     text-align: center;
     transform: translateY(-10px);
     transition: .3s ease;
-    /* opacity: 0; */
+    opacity: 0;
   }
 
   #check:checked~.navbar a {
-    /* transform: translateY(0); */
-    /* opacity: 1; */
-    /* transition-delay: calc(.15 * var(--i)) ; */
+    transform: translateY(-10px);
+    opacity: 1;
+    transition-delay: calc(.15 * var(--i)) ;
   }
 
   li {
