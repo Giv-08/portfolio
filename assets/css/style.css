@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Mohave:ital,wght@0,300..700;1,300..700&family=Sono:wght@200..800&family=Trispace:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Trispace:wght@100..800&display=swap');
+@import "font-awesome";
 
 * {
   padding: 0;
@@ -16,6 +16,7 @@ body {
   font-family: "Trispace", sans-serif;
 }
 
+/* INDEX */
 li {
   list-style: none;
   width: max-content;
@@ -39,7 +40,7 @@ a {
 }
 
 .header::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 0;
   left: 0;
@@ -78,11 +79,6 @@ ul.links li a:hover {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-}
-
-.navbar.links {
-  /* display: flex; */
-  /* gap: 2rem; */
 }
 
 .navbar .logo a {
@@ -129,11 +125,95 @@ div.section_container {
   white-space: pre-line;
 }
 
-/* RESPONSIVE DESIGN */
+/* ABOUT ME */
+
+section.about_me {
+  height: 100vh;
+}
+#about_me {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.about_container {
+  display: flex;
+  justify-content: center;
+}
+
+div.my_photo {
+  display: flex;
+   justify-content: center;
+}
+
+div.photo_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 12rem;
+}
+
+div.about_content {
+  position: absolute;
+  top: 15%;
+}
+
+img#my_photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#introduction {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  letter-spacing: 1px;
+}
+
+#skill {
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#skills {
+  margin: 20px;
+}
+
+div.skills-section {
+  margin: 3rem;
+}
+
+.skills-section > h3 {
+  margin: 20px;
+  letter-spacing: 3px;
+}
+
+.frontend, .backend, .database, .tools {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills-section i {
+  font-size: 3em;
+}
+
+ img {
+  object-fit: contain;
+  margin: 2px 0;
+  width: 46px;
+}
+
+.iconify {
+  font-size: 2.7em;
+  margin-top: 2px;
+}
+/*---------- RESPONSIVE DESIGN ----------*/
 
 @media(max-width: 992px) {
   .header {
-    padding: 1rem;
+    padding: 1rem 2rem
   }
   .navbar .links {
     display: flex;
@@ -148,10 +228,12 @@ div.section_container {
 /* show icons */
 @media (max-width: 768px) {
   .header {
-    padding: 2rem;
+    padding: 1rem 2rem
   }
 
   #logo {
+    top: 10px;
+    position: relative;
     width: 50px;
   }
 
