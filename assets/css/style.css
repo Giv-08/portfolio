@@ -225,14 +225,13 @@ div.skills-section {
   padding-bottom: 0;
 }
 
-/* .contact_container {
-  position: relative;
-  grid-template-rows: 300px max-content max-content;
-  row-gap: 0;
-} */
+.contact_container {
+  margin-top: 10rem;
+}
 
 .contact_mail {
   position: relative;
+  top: 5%;
   background-color: black;
   padding: 1rem 4.5rem 4.5rem;
 }
@@ -284,7 +283,6 @@ label {
   padding: .5rem 1rem;
   font-weight:700;
   transition: border .4s, background-color .4s;
-  border-radius: 5px;
 }
 
 textarea#message.contact_input {
@@ -321,7 +319,7 @@ div.contact_social {
   top: -16px;
   left: 10px;
   color: white;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: 300;
   background-color: black;
   padding: 8px;
@@ -336,22 +334,50 @@ div.contact_social {
 }
 
 .contact_btn {
-  background-color: orange;
+  background-color: #ff7700;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
 }
+
+i.bx.bx-mail-send {
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 /* placeholder disappear */
 .contact_input:focus::placeholder {
   opacity: 0;
 }
 
 /* move label up $ sticky label */
-.contact_input:focu + .contact_label, .contact_input:not(:placeholder-shown).contact_input:not(:focus) + .contact_label {
+.contact_input:focus + .contact_label, .contact_input:not(:placeholder-shown).contact_input:not(:focus) + .contact_label {
   opacity: 1;
   top: -16px;
 }
 
+div.contact_social_links {
+  margin-top: 1.2rem;
+}
+
+a.social_link {
+  font-size: 30px;
+}
+
+.contact_social_links {
+  column-gap: 2.75rem;
+}
+
+.social_link {
+  padding: 5px;
+  place-items: center;
+  transition: background-color .3s;
+}
+
+.social_link:hover {
+  color: #ffffff;
+}
 /*---------- RESPONSIVE DESIGN ----------*/
 
 @media(max-width: 992px) {
