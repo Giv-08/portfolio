@@ -7,26 +7,29 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
-  background-image: linear-gradient(#000000b5, rgb(3 22 23 / 77%)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
+  background-image: linear-gradient(#000000b5, rgba(2, 10, 10, 0.77)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
   background-size: cover;
   background-position: center;
   font-family: "Trispace", sans-serif;
 }
 
 /* INDEX */
+
 li {
   list-style: none;
   width: max-content;
 }
 
-a {
-  text-decoration: none;
-  color: #A56F7D;
-  font-size: 1rem;
-}
 
+p {
+  color: #cdcdcd;
+}
 /* HEADER */
 .header {
   display: flex;
@@ -52,8 +55,47 @@ div.logo {
   align-items: center;
 }
 
+/* top link hover */
+ul.links li a {
+  background-image: linear-gradient(
+    to right,
+    #6ACFC7,
+    #1c857d 50%,
+    #b3fff9 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.links li a:before {
+  content: '';
+  background: #6ACFC7;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.links li a:hover {
+ background-position: 0;
+}
+
+ul.links li a:hover::before{
+  width: 100%;
+}
+
 #logo {
   width: 80px;
+  border-radius: 50%;
 }
 
 ul.links {
@@ -65,9 +107,11 @@ ul.links li a {
   margin: 2rem;
   color: #6ACFC7;
 }
-li a:hover {
+ul.links li a:hover {
   /* transition: 300ms ease-in-out; */
-  color: #ffdfeb;
+  color: #85fff5;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
 .navbar {
@@ -162,27 +206,27 @@ h2.intro_name {
 }
 
 #intro_name2:hover {
-  color:#7abeb9;
+  color:#8dd4cf;
 }
 
 #intro_name3:hover {
-  color:#4eb6ad;
+  color:#6bc9c1;
 }
 
 #intro_name4:hover {
-  color:#3d9891;
+  color:#4cada5;
 }
 
 #intro_name5:hover {
-  color:#148278;
+  color:#1a968c;
 }
 
 #intro_name6:hover {
-  color:#02635b;
+  color:#10615a;
 }
 
 #intro_name7:hover {
-  color:#1c4340;
+  color:#013530;
 }
 
 .intro_text_wrap {
@@ -193,6 +237,7 @@ h2.intro_name {
 div.intro_text {
   width: 70%;
   letter-spacing: 1px;
+  font-size: 16px;
 }
 
 section.intro_section {
@@ -215,7 +260,9 @@ div.section_container {
 
 section.about_me {
   height: 100vh;
+  position: sticky;
 }
+
 #about_me {
   color: white;
   text-align: center;
@@ -264,6 +311,14 @@ div.intro_content {
 
 #resume {
   color: orange;
+}
+
+/* icon */
+i.bx.bxs-download {
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
 }
 
 #skill {
@@ -323,11 +378,11 @@ div.skills-section {
 }
 
 section#contact.contact_section {
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 70px;
 }
 
 #contact_me {
@@ -418,6 +473,39 @@ div.contact_social {
   resize: none;
   padding-top: 1rem;
 }
+/* buttons */
+
+a#resume {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .2s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color:#6cbcb8;
+  box-shadow: inset 0 0 0 2px #69a09c;
+  background-color: transparent;
+  height: 48px;
+  transition: 300ms ease-in-out;
+}
+
+a#resume:hover {
+  cursor: pointer;
+  color: #9fdfdb;
+  background-color: #6faca839;
+}
+
 
 .contact_btn {
   background-color: #ff7700;
