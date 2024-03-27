@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Chef to Coder</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
 
 <body>
@@ -18,7 +18,7 @@
       <i class='bx bx-x' id="close-icon"></i>
     </label>
 
-    <div class="logo"><a href="./index.html" ><img id="logo" src="./assets/css/images/logo2.png" alt="logo"></a></div>
+    <div class="logo"><a href="./index.html" ><img id="logo" src="./assets/images/logo2.png" alt="logo"></a></div>
     <nav class="navbar">
         <ul class="links">
           <li><a href="./index.html" style="--i:0;">Home</a></li>
@@ -29,13 +29,37 @@
       </nav>
   </header>
 
- <h1 style="color: white;">My projects</h1>
-  <!-- <footer>
-    <div class="icon_bar">
-    <a href="#" style="font-size: 30px;"><i class="fa fa-github" alt="github"></i></a>
-    <a href="#" style="font-size: 30px;"><i class="fa fa-linkedin" alt="linkedin"></i></a>
-    <a href="#" style="font-size: 30px;"><i class="fa fa-envelope" alt="email"></i></a>
+
+<section class="project_section" id="projects">
+  <h2 class="project_title">
+    <span id="my_project" style="color: white;">My projects</span>
+  </h2>
+
+  <div class="projects_container grid">
+    <article class="projects_card">
+      <div class="projects_img">
+        <img src="./assets/images/project1.png" alt="project_1" id="project_img">
+        <a href="#" class="project_btn">
+          <!-- icon -->
+        </a>
+
+        <div class="project_content">
+          <h3 class="project_subtitle">App</h3>
+          <h2 class="project_title">To Do List</h2>
+
+          <p class="project_description">This is my project details.This is my project
+             details.This is my project details.This is my project details.This is
+             my project details.This is my project details.</p>
+        </div>
+
+        <div class="project_buttons">
+          <a href="#" target="_blank" class="project_link">
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+      </div>
+    </article>
   </div>
-  </footer> -->
+</section>
 </body>
 </html>

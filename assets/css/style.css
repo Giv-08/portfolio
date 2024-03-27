@@ -9,8 +9,7 @@
 
 body {
   min-height: 100vh;
-  background-color: black;
-  background-image: linear-gradient(#000000ad, rgb(0 0 0 / 92%)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
+  background-image: linear-gradient(#000000b5, rgb(3 22 23 / 77%)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
   background-size: cover;
   background-position: center;
   font-family: "Trispace", sans-serif;
@@ -24,7 +23,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #A56F7D;
   font-size: 1rem;
 }
 
@@ -64,13 +63,12 @@ ul.links {
 
 ul.links li a {
   margin: 2rem;
-  color: white;
+  color: #6ACFC7;
 }
-/* ul.links li a:hover {
-  transition: 300ms ease-in-out;
-  color: rgb(255, 143, 46);
-} */
-
+li a:hover {
+  /* transition: 300ms ease-in-out; */
+  color: #ffdfeb;
+}
 
 .navbar {
   width: 100%;
@@ -84,7 +82,7 @@ ul.links li a {
 .navbar .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  /* color: #ff8cab; */
 }
 
 /* ICON */
@@ -109,6 +107,94 @@ div.toggle_btn {
 }
 
 /* INTRODUCTION */
+.greet {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2#intro_name1.intro_name {
+  color: #9ae9e3;
+  font-size: 125px;
+}
+
+#chutima {
+  display: flex;
+  align-items: baseline;
+}
+
+h1#intro_greet {
+  font-size: 8rem;
+  color: #cdcdcd;
+  width: fit-content;
+  letter-spacing: 5px;
+}
+
+h1#intro_greet:hover {
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+#intro_container h2 {
+  font-size: 6rem;
+  color:#cdcdcd;
+  margin-right: 1.5rem;
+}
+
+#i_am {
+  font-size: 3rem;
+  color:#cdcdcd;
+  margin-right: 2rem;
+}
+
+div.greet_name {
+  display: flex;
+}
+
+h2.intro_name {
+  font-size: 6rem;
+}
+
+#chef {
+  margin: 2rem 0px;
+  font-size: 1.5rem;
+  color: #cdcdcd;
+}
+
+#intro_name2:hover {
+  color:#7abeb9;
+}
+
+#intro_name3:hover {
+  color:#4eb6ad;
+}
+
+#intro_name4:hover {
+  color:#3d9891;
+}
+
+#intro_name5:hover {
+  color:#148278;
+}
+
+#intro_name6:hover {
+  color:#02635b;
+}
+
+#intro_name7:hover {
+  color:#1c4340;
+}
+
+.intro_text_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.intro_text {
+  width: 70%;
+  letter-spacing: 1px;
+}
+
 section.intro_section {
   height: 100vh;
   display: flex;
@@ -378,6 +464,68 @@ a.social_link {
 .social_link:hover {
   color: #ffffff;
 }
+
+#contact_message {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+}
+
+/* projects */
+section#projects.project_section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+p.project_description {
+  color: white;
+}
+
+.projects {
+  background-color: black;
+  transition: background-color .4s;
+}
+
+.projects_container {
+  row-gap: 2rem;
+}
+
+.projects_card {
+  padding: 1rem 1rem 2rem;
+  transition: background-color .4s;
+  /* background-color: white; */
+}
+
+.projects_img {
+  position: relative;
+  margin-bottom: .75rem;
+}
+
+#project_img {
+  width: 300px;
+}
+
+.projects_buttons {
+  position: absolute;
+  right: 1rem;
+  bottom: -1.5rem;
+  padding: 1rem;
+}
+
+.projects_content {
+  margin-bottom: 1.25rem;
+}
+
+.projects_subtitle {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .75rem;
+  padding-left: 1.75rem;
+}
+
 /*---------- RESPONSIVE DESIGN ----------*/
 
 @media(max-width: 992px) {
