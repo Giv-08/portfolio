@@ -284,6 +284,8 @@ div.photo_text {
   justify-content: flex-start;
   align-items: center;
   margin: 0 12rem;
+  bottom: 20px;
+  position: relative;
 }
 
 div.about_content {
@@ -324,15 +326,19 @@ i.bx.bxs-download {
 #skill {
   color: white;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: -1rem;
 }
 
 #skills {
   margin: 20px;
+  position: relative;
+  top: -20px;
 }
 
 div.skills-section {
-  margin: 3rem;
+  margin: 1.5rem 12rem;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
 
 .skills-section > h3 {
@@ -493,17 +499,18 @@ a#resume {
   font-weight: 700;
   text-align: center;
   padding: 16px 14px 18px;
-  color:#6cbcb8;
+  color:#1c7670;
   box-shadow: inset 0 0 0 2px #69a09c;
-  background-color: transparent;
+  background-color: #9fdfdb;
   height: 48px;
-  transition: 300ms ease-in-out;
+  transition: 400ms ease-in-out;
 }
 
 a#resume:hover {
   cursor: pointer;
   color: #9fdfdb;
-  background-color: #6faca839;
+  text-shadow: 1px 1px 1px 2px #1f2222;
+  background-color: transparent;
 }
 
 
@@ -562,6 +569,72 @@ a.social_link {
 }
 
 /* projects */
+div.row {
+  display: grid;
+    justify-items: center;
+    grid-row-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#portfolio {
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+  margin: 3.5rem 0;
+}
+
+#portfolio hr {
+  margin-bottom: 3rem;
+}
+#portfolio figure {
+  position: relative;
+}
+
+#portfolio figure img {
+  width: 100%;
+}
+
+#portfolio figure figcaption {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  bottom: .75rem;
+  left: .75rem;
+  background-color: #5fc6bd99;
+  padding-top: 4rem;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  color: #232323;
+}
+
+#portfolio figure figcaption:hover {
+  background-color: #5fc6bd99;
+  opacity: 1;
+}
+
+#portfolio figure figcaption h3 {
+  text-transform: uppercase;
+}
+
+#portfolio figure figcaption p {
+  margin-bottom: 3rem;
+}
+
+#portfolio figure figcaption a {
+  font-size: 2rem;
+  color: #f3f3f3;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#portfolio figure figcaption a:hover {
+  color: #232323;
+}
+
+
 section#projects.project_section {
   height: 100vh;
   display: flex;
