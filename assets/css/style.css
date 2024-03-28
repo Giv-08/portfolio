@@ -7,12 +7,15 @@
   box-sizing: border-box;
 }
 
+body, html { overflow-x:hidden; }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
+  max-height: fit-content;
+  max-width: fit-content;
   background-image: linear-gradient(#000000b5, rgba(2, 10, 10, 0.77)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
   background-size: cover;
   background-position: center;
@@ -150,6 +153,7 @@ div.toggle_btn {
   display: none;
 }
 
+/* INDEX */
 /* INTRODUCTION */
 .greet {
   display: flex;
@@ -164,6 +168,7 @@ h2#intro_name1.intro_name {
 #chutima {
   display: flex;
   align-items: baseline;
+  justify-content: flex-start;
 }
 
 h1#intro_greet {
@@ -176,7 +181,8 @@ h1#intro_greet {
 h1#intro_greet:hover {
   color: #f0f0f0;
   cursor: pointer;
-  transition: 200ms ease-in-out;
+  transition: 400ms ease-in-out;
+  text-shadow:  2px 2px 5px #a1a1a1;
 }
 
 #intro_container h2 {
@@ -188,7 +194,10 @@ h1#intro_greet:hover {
 #i_am {
   font-size: 3rem;
   color:#cdcdcd;
-  margin-right: 2rem;
+}
+
+em {
+  margin: 0 12px;
 }
 
 div.greet_name {
@@ -199,33 +208,57 @@ h2.intro_name {
   font-size: 6rem;
 }
 
+.floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }
+}
+
 #chef {
   margin: 2rem 0px;
   font-size: 1.5rem;
   color: #cdcdcd;
+  display: flex;
+    justify-content: flex-start;
 }
 
 #intro_name2:hover {
+  transition: 300ms ease-in-out;
   color:#8dd4cf;
 }
 
 #intro_name3:hover {
+  transition: 300ms ease-in-out;
   color:#6bc9c1;
 }
 
 #intro_name4:hover {
+  transition: 300ms ease-in-out;
   color:#4cada5;
 }
 
 #intro_name5:hover {
+  transition: 300ms ease-in-out;
   color:#1a968c;
 }
 
 #intro_name6:hover {
+  transition: 300ms ease-in-out;
   color:#10615a;
 }
 
 #intro_name7:hover {
+  transition: 300ms ease-in-out;
   color:#013530;
 }
 
@@ -241,19 +274,18 @@ div.intro_text {
 }
 
 section.intro_section {
-  height: 100vh;
+  min-height: 105vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 div.section_container {
   width: 70%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  white-space: pre-line;
+    color: white;
+    display: flex;
+    white-space: pre-line;
+    justify-content: center;
 }
 
 /* ABOUT ME */
@@ -466,7 +498,7 @@ div.contact_social {
   top: -16px;
   left: 10px;
   color: white;
-  font-size: 1rem;
+  font-size: .7rem;
   font-weight: 300;
   background-color: black;
   padding: 8px;
@@ -515,16 +547,29 @@ a#resume:hover {
 
 /*  animated text */
 .container{
-	width: 40%;
+	/* width: 100%; */
 }
 
 .animated {
 	padding: 0;
 	margin: 0;
-	margin-left: 50%;
-	transform: translateX(-150%);
+	margin-left: 45%;
+	transform: translateX(-100%);
 	opacity: 0;
-	animation: slide-in-anim 3s ease-in-out forwards;
+	animation: slide-in-anim 2.5s ease-in-out forwards;
+}
+
+.animated_intro {
+	padding: 0;
+	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-100%);
+	opacity: 0;
+	animation: slide-in-anim 2.5s ease-in-out forwards;
+}
+
+div#text_intro.animated_intro {
+  width: 80%;
 }
 
 @keyframes slide-in-anim {
@@ -542,8 +587,6 @@ a#resume:hover {
 		transform: translateX(-50%);
 	}
 }
-
-
 
 .contact_btn {
   background-color: #9ae9e3;
@@ -748,6 +791,17 @@ p.project_description {
     top: 10px;
     position: relative;
     width: 50px;
+  }
+
+  ul.links li a {
+    font-size: 1.3rem;
+    margin: 1.5rem;
+  }
+
+  #chutima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .icons {
