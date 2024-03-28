@@ -35,10 +35,8 @@ p {
 .header {
   display: flex;
   position: fixed;
-  /* padding: 1rem 2rem; */
-  /* top: 0; */
-  /* left: 0; */
   width: 100vw;
+  z-index: 1;
 }
 
 .header::before {
@@ -154,7 +152,7 @@ div.toggle_btn {
 /* INTRODUCTION */
 div#intro_container {
   max-width: 100vw;
-  height: 80vh;
+  height: 85vh;
 }
 
 .greet {
@@ -217,7 +215,7 @@ h2.intro_name {
 
 .floating {
   animation-name: floating;
-  animation-duration: 5s;
+  animation-duration: 2.3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 30px;
@@ -233,14 +231,38 @@ h2.intro_name {
 }
 
 #chef {
-  margin: 2rem 0px;
+  /* margin: 2rem 0px; */
   font-size: 1.5rem;
   color: #cdcdcd;
   display: flex;
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-#intro_name2:hover {
+
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(204deg, #003b41 10%, #00805a 29%, #27f9e6 67%, #8dd2c5 50%);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+  font-size: 12vw;
+  position: relative;
+  right: 2rem;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+/* #intro_name2:hover {
   transition: 300ms ease-in-out;
   color:#8dd4cf;
 }
@@ -268,7 +290,7 @@ h2.intro_name {
 #intro_name7:hover {
   transition: 300ms ease-in-out;
   color:#013530;
-}
+} */
 
 .intro_text_wrap {
   display: flex;
@@ -341,7 +363,7 @@ div.about_content {
 }
 
 img#my_photo {
-  width: 200px;
+  width: 15vw;
   border-radius: 50%;
 }
 
@@ -534,7 +556,7 @@ a#resume {
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   border-radius: 500px;
   transition-property: background-color,border-color,color,box-shadow,filter;
@@ -546,11 +568,11 @@ a#resume {
   white-space: normal;
   font-weight: 700;
   text-align: center;
-  padding: 16px 14px 18px;
+  padding: 7px 10px 7px;
   color:#1c7670;
   box-shadow: inset 0 0 0 2px #69a09c;
   background-color: #9fdfdb;
-  height: 48px;
+  height: 35px;
   transition: 400ms ease-in-out;
 }
 
@@ -781,9 +803,9 @@ p.project_description {
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
 
 @media(max-width: 992px) {
-  .header {
+  /* .header {
     padding: 1rem 2rem
-  }
+  } */
   .navbar .links {
     display: flex;
     font-size: 1rem;
@@ -819,9 +841,9 @@ p.project_description {
     height: 80vh;
   }
 
-  .header {
+  /* .header {
     padding: 1rem 2rem
-  }
+  } */
 
   #logo {
     top: 10px;
@@ -864,7 +886,7 @@ p.project_description {
     font-size: 2.2vw;
     position: relative;
     bottom: 30px;
-    left: 4rem;
+    left: 2rem;
   }
 
   .icons {
