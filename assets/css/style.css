@@ -903,6 +903,9 @@ p.project_description {
     width: 5vw;
   }
 
+  h2#skills {
+    margin-top: 2rem;
+  }
 }
 /* ------------------------------------------------------- */
 @media (max-width: 768px) {
@@ -1040,7 +1043,7 @@ p.project_description {
   }
 
   #skill {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .skills-section i {
@@ -1150,6 +1153,8 @@ p.project_description {
     position: relative;
 
   a#resume {
+    position: relative;
+    bottom: 1rem;
     max-width: 40vw;
     padding: 7px;
     height: 4.5vh;
@@ -1163,8 +1168,8 @@ p.project_description {
     top: 2rem;
   }
 
-  #skill {
-    margin-top: 6rem;
+  h2#skills {
+    margin-top: 4rem;
   }
 
   .skills-section i {
@@ -1220,7 +1225,9 @@ p.project_description {
     height: 4.5vh;
     font-size: 8px;
   }
+
   h2#skills {
+    margin-top: 2rem;
     font-size: 6vw;
   }
 
