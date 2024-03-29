@@ -712,11 +712,12 @@ a.social_link {
 h3.section_subtitle {
   text-align: center;
   color:white;
+  font-size: 3rem;
 }
 
 #projects {
   position: relative;
-  top: 25%;
+  top: 20%;
   min-height: 100vh;
 }
 
@@ -762,7 +763,7 @@ h3.section_subtitle {
   backdrop-filter: blur(1px);
 }
 
-.projects_subtitle, .projects_button {
+.projects_subtitle {
   color: white;
   margin-bottom: .25rem;
 }
@@ -780,11 +781,11 @@ h3.section_subtitle {
 }
 
 a.projects_button {
-  background-color: #ffffff73;
+  background-color: #ffffff3c;
   padding: 8px;
   border-radius: 1rem;
   text-decoration: none;
-  color: #5bc7d0;
+  color: #ffffff;
 }
 
 .projects_button {
@@ -1036,6 +1037,9 @@ a.projects_button {
   .skills-section > h3 {
     font-size: .8rem;
   }
+
+  .projects_subtitle {
+    font-size: 2.2vw;
 }
 
 @media(max-width: 600px) {
@@ -1097,6 +1101,10 @@ a.projects_button {
 
   .projects_container {
     grid-template-columns: 1fr;
+  }
+
+  .projects_subtitle {
+    font-size: 3.8vw;
   }
 }
 
@@ -1227,5 +1235,9 @@ a.projects_button {
   div.about_content {
     position: absolute;
     top: 15%;
+  }
+
+  .projects_subtitle {
+    font-size: 4.5vw;
   }
 }
