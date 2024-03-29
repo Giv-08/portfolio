@@ -94,7 +94,7 @@ ul.links li a:hover::before{
 #logo {
   width: 80px;
   border-radius: 50%;
-  margin: 0 1.8rem;
+  margin: 0 1.5rem;
 }
 
 ul.links {
@@ -175,6 +175,10 @@ div.chutima_container {
   justify-content: flex-start;
 }
 
+h1#about_me {
+  font-size: 4vw;
+}
+
 h1#intro_greet {
   font-size: 10vw;
   color: #cdcdcd;
@@ -193,6 +197,10 @@ h1#intro_greet:hover {
   font-size: 6rem;
   color:#cdcdcd;
   margin-right: 1.5rem;
+}
+
+h2#skills {
+  font-size: 4vw;
 }
 
 #i_am {
@@ -326,6 +334,12 @@ div.section_container {
 }
 
 /* ABOUT ME */
+.scroll-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+}
 
 section.about_me {
   min-height: 100vh;
@@ -390,6 +404,7 @@ div.intro_content {
 }
 
 /* icon */
+
 i.bx.bxs-download {
   font-size: 15px;
   position: relative;
@@ -397,18 +412,27 @@ i.bx.bxs-download {
   margin-right: 4px;
 }
 
+div.icons-skills {
+  display: flex;
+  max-width: 100vw;
+  justify-content: center;
+}
+
 #skill {
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 4rem;
 }
 
-#skills {
+/* #skills {
   margin: 20px;
   position: relative;
   top: -20px;
-}
+} */
 
 div.skills-section {
   margin: 1.5rem 12rem;
@@ -417,24 +441,23 @@ div.skills-section {
 }
 
 .skills-section > h3 {
-  margin: 20px;
+  font-size: 1.2rem;
+  margin: 12px;
   letter-spacing: 3px;
 }
 
-.frontend, .backend, .database, .tools {
+.frontend, .backend, .database, .design-tools, .dev-tools {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .skills-section i {
-  font-size: 3em;
+  font-size: 3vw;
 }
 
- img {
-  object-fit: contain;
-  margin: 2px 0;
-  width: 46px;
+.skills-section img {
+  width: 3vw;
 }
 
 .iconify {
@@ -557,36 +580,36 @@ div.contact_social {
 /* buttons */
 
 a#resume {
-  max-width: 18vw;
-  display: inline-block;
+  max-width: 20vw;
+  display: flex;
   text-decoration: none;
   outline: none;
   cursor: pointer;
   font-size: 12px;
   line-height: 1;
   border-radius: 500px;
-  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-property: background-color, border-color, color, box-shadow, filter;
   transition-duration: .2s;
   border: 1px solid transparent;
   letter-spacing: 2px;
-  min-width: 160px;
   text-transform: uppercase;
   white-space: normal;
   font-weight: 700;
   text-align: center;
   padding: 7px 10px 7px;
-  color:#1c7670;
+  color: #64d6ce;
   box-shadow: inset 0 0 0 2px #69a09c;
-  background-color: #9fdfdb;
-  height: 35px;
-  transition: 400ms ease-in-out;
+  background-color: #9fdfdb00;
+  height: 5vh;
+  transition: 300ms ease-in-out;
+  align-items: center;
 }
 
 a#resume:hover {
   cursor: pointer;
   color: #9fdfdb;
   text-shadow: 1px 1px 1px 2px #1f2222;
-  background-color: transparent;
+  background-color: #04423ad8;
 }
 
 /*  animated text */
@@ -807,11 +830,22 @@ p.project_description {
 }
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
+@media(max-width: 1130px) {
+  #skill {
+    margin-top: 2rem;
+  }
+
+  .skills-section i {
+    font-size: 4vw;
+  }
+
+  .skills-section img {
+    width: 4vw;
+  }
+}
 
 @media(max-width: 992px) {
-  /* .header {
-    padding: 1rem 2rem
-  } */
+
   .navbar .links {
     display: flex;
     font-size: 1rem;
@@ -840,6 +874,35 @@ p.project_description {
     position: relative;
     left: 8rem;
   }
+
+  a#resume {
+    max-width: 30vw;
+    padding: 5px;
+    height: 4.5vh;
+  }
+
+  i.bx.bxs-download {
+    font-size: 17px;
+    position: relative;
+    left: 5px;
+  }
+
+  div.skills-section.row {
+    grid-row-gap: 0;
+  }
+
+  #skill {
+    margin-top: 2rem;
+  }
+
+  .skills-section i {
+    font-size: 5vw;
+  }
+
+  .skills-section img {
+    width: 5vw;
+  }
+
 }
 /* ------------------------------------------------------- */
 @media (max-width: 768px) {
@@ -952,13 +1015,11 @@ p.project_description {
     margin-bottom: -30px;
   }
 
-  div.about_content {
-    position: absolute;
-    top: 5%;
+  .scroll-container {
     display: flex;
-    max-width: 100vw;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
   }
 
   p#introduction {
@@ -970,8 +1031,33 @@ p.project_description {
   img#my_photo {
     width: 22vw;
   }
-}
 
+  a#resume {
+    max-width: 30vw;
+    padding: 10px;
+    height: 4.5vh;
+    font-size: 12px;
+  }
+
+  #skill {
+    margin-top: 6rem;
+  }
+
+  .skills-section i {
+    font-size: 5vw;
+  }
+
+  .skills-section img {
+    width: 5vw;
+  }
+
+  div.skills-section {
+    margin: 2rem 4rem;
+  }
+  .skills-section > h3 {
+    font-size: .8rem;
+  }
+}
 /* ------------------------------------------------------- */
 @media(max-width: 500px) {
   div#intro_container {
@@ -1003,6 +1089,25 @@ p.project_description {
 
   img#my_photo {
     width: 20vw;
+  }
+
+  a#resume {
+    max-width: 35vw;
+    padding: 10px;
+    height: 4.5vh;
+    font-size: 10px;
+  }
+
+  .frontend, .backend, .database, .design-tools, .dev-tools {
+  gap: 1rem;
+  }
+
+  .skills-section > h3 {
+  font-size: 1rem;
+  }
+
+  div.skills-section.row {
+    grid: none;
   }
 }
 
@@ -1044,6 +1149,40 @@ p.project_description {
     top: 25px;
     position: relative;
 
+  a#resume {
+    max-width: 40vw;
+    padding: 7px;
+    height: 4.5vh;
+    font-size: 8px;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+  }
+
+  #skill {
+    margin-top: 6rem;
+  }
+
+  .skills-section i {
+    font-size: 6vw;
+  }
+
+  .skills-section img {
+    width: 6vw;
+  }
+
+  .frontend, .backend, .database, .design-tools, .dev-tools {
+    gap: 0.5rem;
+  }
+
+  div.about_content {
+    position: absolute;
+    top: 12%;
+  }
 }
 
 /* ------------------------------------------------------- */
@@ -1073,5 +1212,27 @@ p.project_description {
     position: relative;
     right: -25px;
     bottom: 20px;
+  }
+
+  a#resume {
+    max-width: 50vw;
+    padding: 7px;
+    height: 4.5vh;
+    font-size: 8px;
+  }
+  h2#skills {
+    font-size: 6vw;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+  }
+
+  div.about_content {
+    position: absolute;
+    top: 15%;
   }
 }
