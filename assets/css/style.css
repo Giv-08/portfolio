@@ -21,6 +21,13 @@ body {
   font-family: "Trispace", sans-serif;
 }
 
+a {
+  background-color: #ffffff3c;
+  padding: 8px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
 /* INDEX */
 
 li {
@@ -47,6 +54,10 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+a#logo {
+  background: transparent;
 }
 
 div.logo {
@@ -365,6 +376,11 @@ div.intro_content {
   flex-direction: column;
 }
 
+#resume:hover {
+  transform: scale(1.08);
+  transition: all .5s ease;
+}
+
 #resume {
   color: #9ae9e3;
 }
@@ -645,7 +661,8 @@ div.contact_social_links {
 
 a.social_link {
   font-size: 30px;
-  text-decoration: auto;
+  text-decoration: none;
+  background: transparent;
 }
 
 .contact_social_links {
@@ -721,7 +738,7 @@ h3.section_subtitle {
 }
 
 .projects_modal:hover {
-  transition: 400ms ease-in-out;
+  transition: 450ms ease-in-out;
   backdrop-filter: blur(1px);
 }
 
@@ -742,7 +759,7 @@ h3.section_subtitle {
   color: white;
 }
 
-a.projects_button {
+a#projects_button {
   background-color: #ffffff3c;
   padding: 8px;
   border-radius: 1rem;
@@ -750,11 +767,11 @@ a.projects_button {
   color: #ffffff;
 }
 
-.projects_button {
+/* .projects_button {
   display: flex;
   align-items: center;
   column-gap: 5rem;
-}
+} */
 
 .projects_button i {
   font-size: 1.25rem;
