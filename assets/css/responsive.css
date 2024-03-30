@@ -11,6 +11,10 @@
   .skills-section img {
     width: 4vw;
   }
+
+  #skill {
+    bottom: 6rem;
+  }
 }
 
 @media(max-width: 992px) {

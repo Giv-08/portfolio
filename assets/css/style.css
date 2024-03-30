@@ -776,3 +776,511 @@ a#projects_button {
 .projects_button i {
   font-size: 1.25rem;
 }
+
+
+/*--------------------- RESPONSIVE DESIGN ----------------------*/
+@media(max-width: 1130px) {
+  #skill {
+    margin-top: 2rem;
+  }
+
+  .skills-section i {
+    font-size: 4vw;
+  }
+
+  .skills-section img {
+    width: 4vw;
+  }
+
+  #skill {
+    bottom: 6rem;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .navbar .links {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  #logo {
+    width: 70px;
+    transition: 400ms ease;
+  }
+
+  h1#intro_greet {
+    font-size: 12vw;
+  }
+
+  #intro_container h2 {
+    font-size: 4rem;
+  }
+
+  div#chutima.animated {
+    position: relative;
+    right: 1rem;
+  }
+
+  .animated_intro p {
+    font-size: 2vw;
+    position: relative;
+    left: 8rem;
+  }
+
+  a#resume {
+    max-width: 30vw;
+    padding: 5px;
+    height: 4.5vh;
+  }
+
+  i.bx.bxs-download {
+    font-size: 17px;
+    position: relative;
+    left: 5px;
+  }
+
+  div.skills-section.row {
+    grid-row-gap: 0;
+  }
+
+  #skill {
+    margin-top: 2rem;
+  }
+
+  .skills-section i {
+    font-size: 5vw;
+  }
+
+  .skills-section img {
+    width: 5vw;
+  }
+
+  h2#skills {
+    margin-top: 2rem;
+  }
+
+  #projects {
+    position: relative;
+    top: 15%;
+  }
+}
+/* ------------------------------------------------------- */
+@media (max-width: 768px) {
+  div#intro_container {
+    height: 80vh;
+  }
+
+  #logo {
+    top: 10px;
+    position: relative;
+    width: 65px;
+  }
+
+  ul.links li a {
+    font-size: 1rem;
+    margin: 1.2rem;
+  }
+
+  h1#intro_greet {
+    font-size: 15vw;
+    right: 8vw;
+    position: relative;
+  }
+
+  #i_am {
+    font-size: 5vw;
+    margin-left: 2rem;
+  }
+
+  #chutima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #intro_container h2 {
+    font-size: 3.5rem;
+  }
+
+  #chef {
+    font-size: 4vw;
+    margin-left: 2rem;
+  }
+
+  .animated_intro p {
+    font-size: 2.2vw;
+    position: relative;
+    bottom: 30px;
+    left: 2rem;
+  }
+
+  .icons {
+    display: inline-flex;
+    padding: 2rem;
+    position: absolute;
+    top:0;
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 110%;
+    left: -30px;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: rgb(0 0 0 / 17%);
+    backdrop-filter: blur(10px);
+  }
+
+  #check:checked~.navbar {
+    height: 14rem;
+  }
+
+  .navbar .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar a {
+    display: block;
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    transform: translateY(-10px);
+    transition: .3s ease;
+    opacity: 0;
+  }
+
+  #check:checked~.navbar {
+    height: 10rem;
+  }
+
+  #check:checked~.navbar a {
+    transform: translateY(-15px);
+    opacity: 1;
+    transition-delay: calc(.15 * var(--i)) ;
+  }
+
+  li {
+    margin-bottom: -30px;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+  }
+
+  p#introduction {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  img#my_photo {
+    width: 22vw;
+  }
+
+  a#resume {
+    max-width: 30vw;
+    padding: 10px;
+    height: 4.5vh;
+    font-size: 12px;
+  }
+
+  #skill {
+    margin-top: 4rem;
+  }
+
+  .skills-section i {
+    font-size: 5vw;
+  }
+
+  .skills-section img {
+    width: 5vw;
+  }
+
+  div.skills-section {
+    margin: 2rem 4rem;
+  }
+  .skills-section > h3 {
+    font-size: .8rem;
+  }
+
+  .projects_subtitle {
+    font-size: 2.2vw;
+  }
+
+  #projects {
+  position: relative;
+  top: 10%;
+  }
+
+  h3.section_subtitle {
+  font-size: 2rem;
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ------------------------------------------------------- */
+@media(max-width: 600px) {
+.projects_container {
+  row-gap: 5rem;
+  }
+}
+/* ------------------------------------------------------- */
+@media(max-width: 500px) {
+  div#intro_container {
+    height: 80vh;
+  }
+
+  p#introduction {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+
+  #intro_container h2 {
+    font-size: 3rem;
+    margin-right: .8rem;
+  }
+
+  #chef {
+    font-size: 5vw;
+    margin-left: 2rem;
+  }
+
+  .animated_intro p {
+    font-size: 3vw;
+    position: relative;
+    bottom: 30px;
+    left: 1rem;
+  }
+
+  img#my_photo {
+    width: 20vw;
+  }
+
+  a#resume {
+    max-width: 35vw;
+    padding: 10px;
+    height: 4.5vh;
+    font-size: 10px;
+  }
+
+  .frontend, .backend, .database, .design-tools, .dev-tools {
+  gap: 1rem;
+  }
+
+  #skill {
+    margin-top: 2rem;
+  }
+
+  div.skills-section.row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .projects_subtitle {
+    font-size: 3.8vw;
+  }
+
+  #projects {
+    position: relative;
+    top: 5%;
+  }
+
+  .projects_img {
+    max-width: 65vw;
+  }
+}
+
+/* ------------------------------------------------------- */
+@media(max-width: 375px) {
+  #intro_container h2 {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  div#intro_container {
+    height: 75vh;
+  }
+
+  h2#intro_name1.intro_name {
+    font-size: 3.5rem;
+  }
+
+  div.greet_name {
+    display: flex;
+    justify-content: center;
+  }
+
+  img#my_photo {
+    width: 25vw;
+  }
+
+  .animated_intro p {
+    font-size: 4vw;
+    position: relative;
+    bottom: 30px;
+    left: 1rem;
+  }
+
+  div.photo_text {
+    display: flex;
+    align-items: center;
+    margin: 0 12rem;
+  }
+
+  a#resume {
+    position: relative;
+    bottom: 1rem;
+    max-width: 40vw;
+    padding: 7px;
+    height: 4.5vh;
+    font-size: 8px;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+  }
+
+  h2#skills {
+    font-size: 4vw;
+    margin-top: 3rem;
+  }
+
+  .skills-section i {
+    font-size: 6vw;
+  }
+
+  .skills-section img {
+    width: 6vw;
+  }
+
+  .frontend, .backend, .database, .design-tools, .dev-tools {
+    gap: 0.5rem;
+  }
+
+  div.about_content {
+    position: absolute;
+    top: 12%;
+  }
+
+  h3.section_subtitle {
+    font-size: 1.5rem;
+  }
+
+  .projects_container {
+    row-gap: 1rem;
+  }
+
+  .projects_title {
+    font-size: 20px;
+  }
+
+  #projects {
+    position: relative;
+    top: 10%;
+  }
+}
+
+/* ------------------------------------------------------- */
+@media(max-width: 280px) {
+  .animated_intro p {
+  font-size: 4vw;
+  position: relative;
+  bottom: 30px;
+  left: 1rem;
+  }
+
+  #i_am {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  p#introduction {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+
+  #introduction {
+    min-width: 75vw;
+  }
+
+  div.my_photo_heading {
+    position: relative;
+    right: -25px;
+    bottom: 20px;
+  }
+
+  a#resume {
+    max-width: 50vw;
+    padding: 7px;
+    height: 4.5vh;
+    font-size: 8px;
+  }
+
+  h2#skills {
+    margin-top: 2rem;
+    font-size: 6vw;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+  }
+
+  div.about_content {
+    position: absolute;
+    top: 15%;
+  }
+
+  #skill {
+    margin-top: 1rem;
+  }
+
+  div.skills-section.row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-section > h3 {
+    font-size: 0.5rem;
+  }
+
+  .projects_subtitle {
+    font-size: 4vw;
+  }
+
+  ul.links li a {
+    font-size: 0.8rem;
+    margin: 1.2rem;
+  }
+}
