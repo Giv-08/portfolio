@@ -459,7 +459,7 @@ div.skills-section.row {
 
 .contact_mail {
   background-color: black;
-  padding: 1rem 4.5rem 4.5rem;
+  padding: 2rem 4.5rem 2.5rem;
   border-radius: 1rem;
 }
 
@@ -495,6 +495,7 @@ label {
 .contact_box {
   position: relative;
   width: 100%;
+  margin-top: 1rem;
   height: 58px;
 }
 
@@ -685,6 +686,7 @@ a.social_link {
   position: absolute;
   bottom: -2.5rem;
   left: 0;
+  text-align: center;
 }
 
 /* projects */
