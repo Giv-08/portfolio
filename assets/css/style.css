@@ -211,7 +211,7 @@ h1#intro_greet:hover {
 }
 
 h2#skills {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 #i_am {
@@ -292,7 +292,9 @@ div.intro_text {
   font-size: 1.5vw;
   position: relative;
   bottom: 30px;
-  left: 8rem;
+  left: 12rem;
+  line-height: 2rem;
+  text-align: center;
 }
 
 section.intro_section {
@@ -341,11 +343,7 @@ div.my_photo {
 
 div.photo_text {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 12rem;
-  bottom: 20px;
-  position: relative;
+  flex-direction: column;
 }
 
 div.about_content {
@@ -403,11 +401,6 @@ div.icons-skills {
 #skill {
   color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  bottom: 4rem;
 }
 
 div.skills-section {
@@ -1093,7 +1086,7 @@ a#projects_button {
   }
 
   #skill {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   div.skills-section.row {
@@ -1150,11 +1143,11 @@ a#projects_button {
     left: 1rem;
   }
 
-  div.photo_text {
+  /* div.photo_text {
     display: flex;
     align-items: center;
     margin: 0 12rem;
-  }
+  } */
 
   a#resume {
     position: relative;
@@ -1191,7 +1184,8 @@ a#projects_button {
 
   div.about_content {
     position: absolute;
-    top: 12%;
+    top: 10%;
+    display: flex
   }
 
   h3.section_subtitle {
