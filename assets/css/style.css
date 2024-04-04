@@ -405,6 +405,10 @@ div.icons-skills {
   justify-content: center;
 }
 
+#skill-header {
+  color: #9ae9e3;
+}
+
 #skill {
   color: white;
   text-align: center;
@@ -432,17 +436,19 @@ div.skills-section {
 
 .skills-section i {
   font-size: 3vw;
+  margin-bottom: 5px;
 }
 
 .skills-section img {
   width: 3vw;
+  margin-bottom: 5px;
 }
 
 div.skills-section.row {
   grid-template-columns: 1fr 1fr;
   display: grid;
   justify-items: center;
-  grid-row-gap: 1rem;
+  grid-row-gap: 1.5rem;
   background: #ffffff6b;
   padding: 2rem 1rem;
 }
@@ -715,6 +721,8 @@ h3.section_subtitle {
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects_container {
@@ -784,12 +792,6 @@ a#projects_button {
   color: #ffffff;
 }
 
-/* .projects_button {
-  display: flex;
-  align-items: center;
-  column-gap: 5rem;
-} */
-
 .projects_button i {
   font-size: 1.25rem;
 }
@@ -797,17 +799,14 @@ a#projects_button {
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
 @media(max-width: 1130px) {
-  /* #skill {
-    margin-top: 2rem;
-  } */
 
   .skills-section img {
     width: 4vw;
   }
 
-  /* #skill {
-    bottom: 6rem;
-  } */
+  .skills-section i {
+    font-size: 4vw;
+  }
 }
 
 @media(max-width: 992px) {
@@ -1099,13 +1098,17 @@ a#projects_button {
   gap: 1rem;
   }
 
-  /* #skill {
-    margin-top: 4rem;
-  } */
+  div.skills-section.row {
+    grid-template-columns: 1fr;
+  }
 
-  /* div.skills-section.row {
-    grid-template-columns: 1fr 1fr;
-  } */
+  #skills_heading {
+    font-size: 4vw;
+  }
+
+  #project_description {
+    font-size: 12px;
+  }
 
   .projects_container {
     grid-template-columns: 1fr;
@@ -1157,12 +1160,6 @@ a#projects_button {
     left: 1rem;
   }
 
-  /* div.photo_text {
-    display: flex;
-    align-items: center;
-    margin: 0 12rem;
-  } */
-
   a#resume {
     position: relative;
     bottom: 1rem;
@@ -1193,7 +1190,8 @@ a#projects_button {
   }
 
   .frontend, .backend, .database, .design-tools, .dev-tools {
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   div.about_content {
