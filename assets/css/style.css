@@ -211,10 +211,6 @@ h1#intro_greet:hover {
   margin-right: 1.5rem;
 }
 
-/* h2#skills {
-  font-size: 3vw;
-} */
-
 #i_am {
   font-size: 3rem;
   color:#cdcdcd;
@@ -386,6 +382,7 @@ div.intro_content {
   color: #9ae9e3;
 }
 
+/* SKILLS AND TOOLS */
 /* icon */
 
 i.bx.bxs-download {
@@ -393,6 +390,13 @@ i.bx.bxs-download {
   position: relative;
   top: 2px;
   margin-right: 4px;
+}
+
+div.icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  align-items: center;
 }
 
 div.icons-skills {
@@ -440,7 +444,7 @@ div.skills-section.row {
   justify-items: center;
   grid-row-gap: 1rem;
   background: #ffffff6b;
-  padding-right: 2rem;
+  padding: 2rem 1rem;
 }
 
 .iconify {
