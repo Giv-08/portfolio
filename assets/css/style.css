@@ -449,8 +449,9 @@ div.skills-section.row {
   display: grid;
   justify-items: center;
   grid-row-gap: 1.5rem;
-  background: #ffffff6b;
+  background: #ffffff54;
   padding: 2rem 1rem;
+  border-radius: .5rem;
 }
 
 .iconify {
