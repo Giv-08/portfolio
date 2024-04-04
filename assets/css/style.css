@@ -116,6 +116,7 @@ ul.links {
 
 ul.links li a {
   margin: 2rem;
+  font-size: 1rem;
   color: #6ACFC7;
 }
 
@@ -210,9 +211,9 @@ h1#intro_greet:hover {
   margin-right: 1.5rem;
 }
 
-h2#skills {
+/* h2#skills {
   font-size: 3vw;
-}
+} */
 
 #i_am {
   font-size: 3rem;
@@ -317,7 +318,7 @@ div.section_container {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 30px;
+  bottom: 2rem;
 }
 
 section.about_me {
@@ -356,15 +357,16 @@ div.about_content {
 }
 
 img#my_photo {
-  width: 15vw;
+  width: 13vw;
   border-radius: 50%;
 }
 
 #introduction {
-  min-width: 65vw;
+  width: 65vw;
   text-align: center;
   color: white;
   padding: 40px;
+  line-height: 2rem;
   letter-spacing: 1px;
 }
 
@@ -372,6 +374,7 @@ div.intro_content {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 #resume:hover {
@@ -401,12 +404,14 @@ div.icons-skills {
 #skill {
   color: white;
   text-align: center;
+  width: 100vw;
 }
 
 div.skills-section {
   margin: 1.5rem 12rem;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  font-size: 4vw;
 }
 
 .skills-section > h3 {
@@ -430,10 +435,12 @@ div.skills-section {
 }
 
 div.skills-section.row {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   display: grid;
   justify-items: center;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  background: #ffffff6b;
+  padding-right: 2rem;
 }
 
 .iconify {
@@ -681,6 +688,17 @@ a.social_link {
   left: 0;
   text-align: center;
 }
+/* skills and tools */
+#skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#skills_heading {
+  font-size: 3vw;
+  margin: 2rem;
+}
 
 /* projects */
 h3.section_subtitle {
@@ -690,9 +708,9 @@ h3.section_subtitle {
 }
 
 #projects {
-  position: relative;
-  top: 20%;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .projects_container {
@@ -775,21 +793,17 @@ a#projects_button {
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
 @media(max-width: 1130px) {
-  #skill {
+  /* #skill {
     margin-top: 2rem;
-  }
-
-  .skills-section i {
-    font-size: 4vw;
-  }
+  } */
 
   .skills-section img {
     width: 4vw;
   }
 
-  #skill {
+  /* #skill {
     bottom: 6rem;
-  }
+  } */
 }
 
 @media(max-width: 992px) {
@@ -835,13 +849,13 @@ a#projects_button {
     left: 5px;
   }
 
-  div.skills-section.row {
+  /* div.skills-section.row {
     grid-row-gap: 0;
-  }
-
+  } */
+/*
   #skill {
     margin-top: 2rem;
-  }
+  } */
 
   .skills-section i {
     font-size: 5vw;
@@ -849,10 +863,6 @@ a#projects_button {
 
   .skills-section img {
     width: 5vw;
-  }
-
-  h2#skills {
-    margin-top: 2rem;
   }
 
   #projects {
@@ -983,7 +993,7 @@ a#projects_button {
   }
 
   p#introduction {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     line-height: 20px;
   }
@@ -998,10 +1008,10 @@ a#projects_button {
     height: 4.5vh;
     font-size: 12px;
   }
-
+/*
   #skill {
     margin-top: 4rem;
-  }
+  } */
 
   .skills-section i {
     font-size: 5vw;
@@ -1085,13 +1095,13 @@ a#projects_button {
   gap: 1rem;
   }
 
-  #skill {
+  /* #skill {
     margin-top: 4rem;
-  }
+  } */
 
-  div.skills-section.row {
+  /* div.skills-section.row {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   .projects_container {
     grid-template-columns: 1fr;
@@ -1165,10 +1175,10 @@ a#projects_button {
     top: 2rem;
   }
 
-  h2#skills {
+  /* h2#skills {
     font-size: 4vw;
     margin-top: 3rem;
-  }
+  } */
 
   .skills-section i {
     font-size: 6vw;
@@ -1242,10 +1252,10 @@ a#projects_button {
     font-size: 8px;
   }
 
-  h2#skills {
+  /* h2#skills {
     margin-top: 2rem;
     font-size: 6vw;
-  }
+  } */
 
   .scroll-container {
     display: flex;
@@ -1259,13 +1269,13 @@ a#projects_button {
     top: 15%;
   }
 
-  #skill {
+  /* #skill {
     margin-top: 1rem;
-  }
+  } */
 
-  div.skills-section.row {
+  /* div.skills-section.row {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   .skills-section > h3 {
     font-size: 0.5rem;
