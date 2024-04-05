@@ -713,17 +713,49 @@ a.social_link {
 
 /* projects */
 div.card-deck {
-  margin-top: 2rem;
+  margin: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4.5rem;
   justify-items: center;
+}
+
+#img-box {
+  position: relative;
+}
+
+.card-img-top {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#img-box:hover .card-img-top {
+  opacity: 0.3;
+}
+
+#img-box:hover .middle {
+  opacity: 1;
 }
 
 .projects {
   color: #93a1a1;
-  background-color:  #073642;
+  background-color:  #1b776a;
   border-bottom: 1px solid #dbdbdb;
-  font-family: 'Noto Sans Kannada', sans-serif;
 }
 
 .projects p {
@@ -734,19 +766,47 @@ div.card-deck {
 .card-img-top{
   height: 220px;
   width: 100%;
+  border-top-right-radius: 1rem;
 }
 
 
 .btn-custom {
-  background-color:#660033;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17), 0 3px 7px 0 rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #81fcd99b;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  transition: 200ms ease-in-out;
+  background-color: transparent;
+  border: 2px solid  #81fcd9;
 }
 
 .projects a {
   color: #fdf6e3;
 }
 
+.card-title {
+  color: white;
+}
+
+.card-text {
+  text-align: center;
+  color: #1cab9f;
+  font-size: 13px;
+}
+
 .card {
+  position: relative;
   display: flex;
   width: 100%;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17), 0 5px 5px 0 rgba(0, 0, 0, 0.13);
@@ -754,9 +814,15 @@ div.card-deck {
 }
 
 .card-body{
-  border-bottom:1px solid #b58900;
-  background-color:#002b36;
-  padding: 2rem 1rem;
+  display: flex;
+  border-bottom: 2px solid #9ffffa;
+  background-color: #003738;
+  padding: 1rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  height: 100%;
+  border-bottom-left-radius: 1rem;
 }
 
 
@@ -776,7 +842,7 @@ h3.section_subtitle {
   justify-content: center;
 }
 
-.projects_container {
+/* .projects_container {
   row-gap: 2rem;
   column-gap: 3rem;
   margin: 2rem;
@@ -845,7 +911,7 @@ a#projects_button {
 
 .projects_button i {
   font-size: 1.25rem;
-}
+} */
 
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
@@ -917,6 +983,11 @@ a#projects_button {
 
   .skills-section img {
     width: 5vw;
+  }
+
+  div.card-deck {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
   }
 
   #projects {
@@ -1097,8 +1168,13 @@ a#projects_button {
 }
 /* ------------------------------------------------------- */
 @media(max-width: 600px) {
-.projects_container {
+  .projects_container {
   row-gap: 5rem;
+  }
+
+  div.card-deck {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
 }
 /* ------------------------------------------------------- */
