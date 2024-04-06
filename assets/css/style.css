@@ -725,10 +725,11 @@ div.card-deck {
 }
 
 .card-img-top {
+  height: 20vh;
+  width: 100%;
+  border-top-right-radius: 1rem;
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   /* background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.607),rgba(0, 0, 0, 0.364)); */
@@ -766,14 +767,6 @@ div.skill-icons i {
 .projects p {
   font-size: 15px;
 }
-
-/*new css*/
-.card-img-top{
-  height: 220px;
-  width: 100%;
-  border-top-right-radius: 1rem;
-}
-
 
 .btn-custom {
   position: absolute;
