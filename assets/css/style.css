@@ -731,6 +731,7 @@ div.card-deck {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  /* background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.607),rgba(0, 0, 0, 0.364)); */
 }
 
 .middle {
@@ -742,6 +743,10 @@ div.card-deck {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+div.skill-icons i {
+  color: #b7fff3;
 }
 
 #img-box:hover .card-img-top {
