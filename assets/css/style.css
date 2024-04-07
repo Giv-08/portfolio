@@ -354,7 +354,7 @@ div.about_content {
 
 img#my_photo {
   width: 13vw;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 #introduction {
@@ -787,7 +787,8 @@ div.skill-icons i {
 .btn-custom:hover {
   transition: 200ms ease-in-out;
   background-color: transparent;
-  border: 2px solid  #81fcd9;
+  border: 2px solid  #69cdb0;
+  color:  #69cdb0;
 }
 
 .projects a {
@@ -821,7 +822,8 @@ div.skill-icons i {
   align-items: center;
   gap: .5rem;
   height: 100%;
-  border-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 
