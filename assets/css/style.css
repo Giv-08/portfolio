@@ -722,6 +722,7 @@ div.card-deck {
 
 #img-box {
   position: relative;
+  background-color: white;
 }
 
 .card-img-top {
@@ -824,8 +825,6 @@ div.skill-icons i {
 }
 
 
-
-
 h3.section_subtitle {
   text-align: center;
   color:white;
@@ -839,78 +838,6 @@ h3.section_subtitle {
   flex-direction: column;
   justify-content: center;
 }
-
-/* .projects_container {
-  row-gap: 2rem;
-  column-gap: 3rem;
-  margin: 2rem;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-block: 1rem;
-}
-
-.projects_card {
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.projects_img {
-  width: 100%;
-  height: 100%;
-}
-
-.projects_modal {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(175deg, #a5f6ef6e, #2f2f2fbf);
-  backdrop-filter: blur(30px);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.projects_modal:hover {
-  transition: 450ms ease-in-out;
-  backdrop-filter: blur(1px);
-}
-
-.projects_subtitle {
-  color: white;
-  margin-bottom: .25rem;
-}
-
-.projects_subtitle {
-  font-size: 1.8vw;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.projects_title {
-  font-size: 25px;
-  margin-bottom: .75rem;
-  color: white;
-}
-
-a#projects_button {
-  background-color: #ffffff3c;
-  padding: 8px;
-  border-radius: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.projects_button i {
-  font-size: 1.25rem;
-} */
-
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
 @media(max-width: 1130px) {
