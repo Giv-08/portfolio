@@ -162,6 +162,45 @@ div.toggle_btn {
 
 /* INDEX */
 /* INTRODUCTION */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container_float {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	box-sizing: border-box;
+	border-top: 2px #9ffffa solid;
+  border-bottom: 2px #9ffffa solid;
+	border-radius: 5%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+
+
+
 div#intro_container {
   max-width: 100vw;
   height: 85vh;
@@ -896,14 +935,6 @@ h3.section_subtitle {
     left: 5px;
   }
 
-  /* div.skills-section.row {
-    grid-row-gap: 0;
-  } */
-/*
-  #skill {
-    margin-top: 2rem;
-  } */
-
   .skills-section i {
     font-size: 5vw;
   }
@@ -1045,7 +1076,7 @@ h3.section_subtitle {
   }
 
   p#introduction {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     line-height: 20px;
   }
