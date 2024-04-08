@@ -347,7 +347,7 @@ div.section_container {
 	border-radius: 5%;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(10px);
+	/* transform: translatey(10px); */
 	animation: float 5s ease-in-out infinite;
 }
 
@@ -360,10 +360,10 @@ div.section_container {
   display: inline-block;
   -webkit-animation-name: fade;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
+  -webkit-animation-duration: 8s;
   animation-name: fade;
   animation-iteration-count: infinite;
-  animation-duration: 6s;
+  animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
@@ -545,7 +545,24 @@ div.skills-section.row {
 }
 
 .contact_mail {
-  background-color: black;
+  /* background-color: black; */
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 10px,
+      transparent 10px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
+  border-top: #43fdf7 2px solid;
+  border-bottom: #43fdf7  2px solid;
   padding: 2rem 4.5rem 2.5rem;
   border-radius: 1rem;
 }
@@ -720,7 +737,7 @@ div#text_intro.animated_intro {
 }
 
 .contact_btn {
-  background-color: #9ae9e3;
+  background-color: #43fdf7 ;
   cursor: pointer;
   border: none;
 }
@@ -799,7 +816,7 @@ div.card-deck {
 
 #img-box {
   position: relative;
-  background-color: white;
+  background-color: #585858;
 }
 
 .card-img-top {
@@ -872,6 +889,7 @@ div.skill-icons i {
 }
 
 .card-title {
+  text-align: center;
   color: white;
 }
 
@@ -892,7 +910,22 @@ div.skill-icons i {
 .card-body{
   display: flex;
   border-bottom: 2px solid #9ffffa;
-  background-color: #003738;
+  /* background-color: #003738; */
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 10px,
+      transparent 10px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
   padding: 1rem 1rem;
   flex-direction: column;
   align-items: center;
@@ -1409,4 +1442,24 @@ h3.section_subtitle {
     font-size: 0.8rem;
     margin: 1.2rem;
   }
+}
+
+
+
+.cooking-icon {
+  margin: 100px auto 0;
+  /* 画像置換 */
+  background: url(https://noasobi.co.jp/wp-content/uploads/2019/11/cooking_ani02.png) 0 0 no-repeat transparent;
+  height: 0;
+  overflow: hidden;
+  padding-top: 150px;
+  width: 165px;
+  /* アニメーション */
+  animation: cooking-icon-ani 1s steps(39, start) infinite;
+  transform: scale(.7);
+}
+
+@keyframes cooking-icon-ani {
+  0%   {background-position: 0 0;}
+  100% {background-position: -6435px 0;}
 }
