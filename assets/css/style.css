@@ -162,44 +162,9 @@ div.toggle_btn {
 
 /* INDEX */
 /* INTRODUCTION */
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+.card:hover .img-top {
+  display: inline;
 }
-
-.container_float {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.avatar {
-	box-sizing: border-box;
-	border-top: 2px #9ffffa solid;
-  border-bottom: 2px #9ffffa solid;
-	border-radius: 5%;
-	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	img { width: 100%; height: auto; }
-}
-
-
-
 
 div#intro_container {
   max-width: 100vw;
@@ -349,6 +314,59 @@ div.section_container {
 }
 
 /* ABOUT ME */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container_float {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+	box-sizing: border-box;
+	border-top: 2px #9ffffa solid;
+  border-bottom: 2px #9ffffa solid;
+	border-radius: 5%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(10px);
+  transition: 8s ease-out;
+	animation: float 5s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.avatar:hover img:first-child {
+  display: none;
+  cursor: pointer;
+}
+
+.avatar img:last-child {
+  display: none;
+}
+
+.avatar:hover img:last-child {
+  display: block;
+  cursor: pointer;
+}
+
 .scroll-container {
   display: flex;
   justify-content: center;
@@ -374,7 +392,7 @@ div.about_container {
 
 div.my_photo {
   display: flex;
-   justify-content: center;
+  justify-content: center;
 }
 
 div.photo_text {
@@ -392,6 +410,11 @@ div.about_content {
 }
 
 img#my_photo {
+  width: 13vw;
+  border-radius: 5%;
+}
+
+img#my_photo_after {
   width: 13vw;
   border-radius: 5%;
 }
