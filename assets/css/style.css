@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Trispace:wght@100..800&display=swap');
 @import "font-awesome";
-@import "responsive.css";
 
 * {
   padding: 0;
@@ -15,9 +14,9 @@ html {
 }
 
 body {
-  background-image: linear-gradient(#000000b5, rgba(2, 10, 10, 0.77)), url(https://wallpapers.com/images/hd/cooking-background-kk2seuicibm5qx0o.jpg);
+  /* background-image: linear-gradient(#000000b5, rgba(2, 10, 10, 0.77)), url(/assets/images/bg1.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   font-family: "Trispace", sans-serif;
 }
 
@@ -265,7 +264,7 @@ h2.intro_name {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
+  animation: textclip 15s linear infinite;
   display: inline-block;
   font-size: 12vw;
   position: relative;
@@ -545,8 +544,8 @@ div.skills-section.row {
 }
 
 .contact_mail {
-  /* background-color: black; */
-  background-image: repeating-linear-gradient(
+  background-color: #000000;
+  /* background-image: repeating-linear-gradient(
       45deg,
       hsla(312, 0%, 63%, 0.05) 0px,
       hsla(312, 0%, 63%, 0.05) 10px,
@@ -560,7 +559,7 @@ div.skills-section.row {
       transparent 50px,
       transparent 100px
     ),
-    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%)); */
   border-top: #43fdf7 2px solid;
   border-bottom: #43fdf7  2px solid;
   padding: 2rem 4.5rem 2.5rem;
@@ -910,8 +909,8 @@ div.skill-icons i {
 .card-body{
   display: flex;
   border-bottom: 2px solid #9ffffa;
-  /* background-color: #003738; */
-  background-image: repeating-linear-gradient(
+  background-color: #000000;
+  /* background-image: repeating-linear-gradient(
       45deg,
       hsla(312, 0%, 63%, 0.05) 0px,
       hsla(312, 0%, 63%, 0.05) 10px,
@@ -925,7 +924,7 @@ div.skill-icons i {
       transparent 50px,
       transparent 100px
     ),
-    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%)); */
   padding: 1rem 1rem;
   flex-direction: column;
   align-items: center;
@@ -945,9 +944,9 @@ h3.section_subtitle {
 #projects {
   height: 100vh;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
@@ -1019,8 +1018,8 @@ h3.section_subtitle {
   }
 
   #projects {
-    position: relative;
-    top: 15%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 /* ------------------------------------------------------- */
@@ -1107,7 +1106,7 @@ h3.section_subtitle {
   }
 
   #check:checked~.navbar {
-    height: 14rem;
+    height: 12rem;
   }
 
   .navbar .links {
@@ -1122,10 +1121,6 @@ h3.section_subtitle {
     transform: translateY(-10px);
     transition: .3s ease;
     opacity: 0;
-  }
-
-  #check:checked~.navbar {
-    height: 10rem;
   }
 
   #check:checked~.navbar a {
@@ -1152,6 +1147,10 @@ h3.section_subtitle {
   }
 
   img#my_photo {
+    width: 22vw;
+  }
+
+  img#my_photo_after {
     width: 22vw;
   }
 
@@ -1182,8 +1181,19 @@ h3.section_subtitle {
   }
 
   #projects {
-  position: relative;
-  top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 11px;
+  }
+
+  .card-img-top {
+    height: 15vh;
   }
 
   h3.section_subtitle {
@@ -1215,6 +1225,7 @@ h3.section_subtitle {
     font-size: 0.7rem;
     letter-spacing: 1px;
     line-height: 15px;
+    width: 100vw;
   }
 
   #intro_container h2 {
@@ -1235,6 +1246,10 @@ h3.section_subtitle {
   }
 
   img#my_photo {
+    width: 20vw;
+  }
+
+  img#my_photo_after {
     width: 20vw;
   }
 
@@ -1271,17 +1286,28 @@ h3.section_subtitle {
   }
 
   #projects {
-    position: relative;
-    top: 5%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .projects_img {
     max-width: 65vw;
   }
+
+  em {
+    width: 80%;
+  }
 }
 
 /* ------------------------------------------------------- */
 @media(max-width: 375px) {
+  #logo {
+    top: 10px;
+    position: relative;
+    width: 45px;
+    margin: 0 .5rem;
+  }
+
   #intro_container h2 {
     font-size: 2rem;
     margin-right: 1rem;
@@ -1301,6 +1327,10 @@ h3.section_subtitle {
   }
 
   img#my_photo {
+    width: 25vw;
+  }
+
+  img#my_photo_after {
     width: 25vw;
   }
 
@@ -1326,11 +1356,6 @@ h3.section_subtitle {
     position: relative;
     top: 2rem;
   }
-
-  /* h2#skills {
-    font-size: 4vw;
-    margin-top: 3rem;
-  } */
 
   .skills-section i {
     font-size: 6vw;
@@ -1364,8 +1389,40 @@ h3.section_subtitle {
   }
 
   #projects {
+    display: flex;
+    justify-content: flex-start;
     position: relative;
     top: 10%;
+  }
+
+  .card-title {
+    font-size: 11px;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+
+  .contact_mail {
+    padding: 2rem 2.5rem 1.5rem;
+  }
+
+  div.card-deck {
+    margin: 1.5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card-img-top {
+    height: 10vh;
+  }
+
+  .card-body {
+    gap: .2rem;
+    height: 8vh;
+    padding: 0.3rem 0.3rem;
   }
 }
 
@@ -1405,11 +1462,6 @@ h3.section_subtitle {
     font-size: 8px;
   }
 
-  /* h2#skills {
-    margin-top: 2rem;
-    font-size: 6vw;
-  } */
-
   .scroll-container {
     display: flex;
     justify-content: center;
@@ -1422,16 +1474,12 @@ h3.section_subtitle {
     top: 15%;
   }
 
-  /* #skill {
-    margin-top: 1rem;
-  } */
-
-  /* div.skills-section.row {
-    grid-template-columns: 1fr 1fr;
-  } */
+  #skills_heading {
+    font-size: 6vw;
+  }
 
   .skills-section > h3 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .projects_subtitle {
@@ -1442,24 +1490,56 @@ h3.section_subtitle {
     font-size: 0.8rem;
     margin: 1.2rem;
   }
+
+  div.skills-section.row {
+    grid-row-gap: .5rem;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+  }
+
+  .skills {
+    position: relative;
+    top: 12rem;
+  }
+
+  div.card-deck {
+    margin: 1rem;
+  }
+
+  #contact_me {
+    font-size: 12px;
+  }
 }
 
 
 
-.cooking-icon {
-  margin: 100px auto 0;
-  /* 画像置換 */
-  background: url(https://noasobi.co.jp/wp-content/uploads/2019/11/cooking_ani02.png) 0 0 no-repeat transparent;
-  height: 0;
-  overflow: hidden;
-  padding-top: 150px;
-  width: 165px;
-  /* アニメーション */
-  animation: cooking-icon-ani 1s steps(39, start) infinite;
-  transform: scale(.7);
+
+.bg {
+  animation:slide 15s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #035448 50%, #000000 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
 
-@keyframes cooking-icon-ani {
-  0%   {background-position: 0 0;}
-  100% {background-position: -6435px 0;}
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:18s;
+}
+
+.bg3 {
+  animation-duration:20s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
