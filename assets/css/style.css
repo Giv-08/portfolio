@@ -1435,7 +1435,7 @@ h3.section_subtitle {
     display: flex;
     justify-content: flex-start;
     position: relative;
-    top: 10%;
+    top: 20%;
   }
 
   .card-title {
@@ -1465,7 +1465,7 @@ h3.section_subtitle {
   }
 
   .contact_title {
-    margin-top: 1rem;
+    margin-top: 4rem;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -1524,6 +1524,10 @@ h3.section_subtitle {
     top: 15%;
   }
 
+  #skills {
+    display: flex;
+  }
+
   #skills_heading {
     font-size: 6vw;
   }
@@ -1558,6 +1562,16 @@ h3.section_subtitle {
 
   #contact_me {
     font-size: 12px;
+  }
+
+  .scroll-container_contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact_title {
+    margin-top: 2rem;
+    font-size: 1rem;
   }
 }
 
