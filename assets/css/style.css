@@ -1524,9 +1524,9 @@ h3.section_subtitle {
     top: 15%;
   }
 
-  #skills {
+  /* #skills {
     display: flex;
-  }
+  } */
 
   #skills_heading {
     font-size: 6vw;
@@ -1534,6 +1534,13 @@ h3.section_subtitle {
 
   .skills-section > h3 {
     font-size: 0.6rem;
+  }
+
+  #projects {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 45%;
   }
 
   .projects_subtitle {
@@ -1551,9 +1558,9 @@ h3.section_subtitle {
     border-radius: .5rem;
   }
 
-  .skills {
+  #skills {
     position: relative;
-    top: 12rem;
+    top: 10%;
   }
 
   div.card-deck {
@@ -1567,12 +1574,21 @@ h3.section_subtitle {
   .scroll-container_contact {
     display: flex;
     align-items: center;
+    margin-top: 15rem;
   }
 
   .contact_title {
     margin-top: 2rem;
     font-size: 1rem;
   }
+
+  .card-body {
+    height: 12vh;
+  }
+
+  /* .contact_container {
+    margin-top: 12rem;
+  } */
 }
 
 
