@@ -904,6 +904,8 @@ div.skill-icons i {
   width: 100%;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17), 0 5px 5px 0 rgba(0, 0, 0, 0.13);
   flex-direction: column;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .card-body{
@@ -966,6 +968,10 @@ h3.section_subtitle {
   .navbar .links {
     display: flex;
     font-size: 1rem;
+  }
+
+  ul.links li a {
+    margin: 1rem;
   }
 
   #logo {
@@ -1214,7 +1220,28 @@ h3.section_subtitle {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
+
+  #skills_heading {
+    font-size: 6vw;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  /* .contact_title {
+    margin: 2rem;
+  } */
+
+  .contact_form, .contact_group {
+    row-gap: 0;
+  }
+
+  .contact_mail {
+    padding: 1rem 2.5rem 1.5rem;
+  }
 }
+
 /* ------------------------------------------------------- */
 @media(max-width: 500px) {
   div#intro_container {
@@ -1261,7 +1288,7 @@ h3.section_subtitle {
   }
 
   .frontend, .backend, .database, .design-tools, .dev-tools {
-  gap: 1rem;
+    gap: 1rem;
   }
 
   div.skills-section.row {
@@ -1296,6 +1323,14 @@ h3.section_subtitle {
 
   em {
     width: 80%;
+  }
+  .card-img-top {
+    height: 12vh;
+  }
+
+  .card-body {
+    gap: .1rem;
+    height: 10vh;
   }
 }
 
@@ -1403,10 +1438,6 @@ h3.section_subtitle {
     font-size: 10px;
   }
 
-  .contact_mail {
-    padding: 2rem 2.5rem 1.5rem;
-  }
-
   div.card-deck {
     margin: 1.5rem;
   }
@@ -1423,6 +1454,17 @@ h3.section_subtitle {
     gap: .2rem;
     height: 8vh;
     padding: 0.3rem 0.3rem;
+  }
+
+  .contact_title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .contact_mail {
+    padding: 0rem 2.5rem 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 
