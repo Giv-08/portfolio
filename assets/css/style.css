@@ -951,6 +951,14 @@ h3.section_subtitle {
   flex-direction: column;
 }
 
+.contact_title {
+  margin: 2rem;
+}
+
+#contact_header {
+  font-size: 2rem;
+}
+
 /*--------------------- RESPONSIVE DESIGN ----------------------*/
 @media(max-width: 1130px) {
 
