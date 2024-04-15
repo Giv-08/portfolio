@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Trispace:wght@100..800&display=swap');
-@import "font-awesome";
+/* @import "font-awesome"; */
 
 * {
   padding: 0;
@@ -14,9 +14,6 @@ html {
 }
 
 body {
-  /* background-image: linear-gradient(#000000b5, rgba(2, 10, 10, 0.77)), url(/assets/images/bg1.jpg);
-  background-size: cover;
-  background-position: center; */
   font-family: "Trispace", sans-serif;
 }
 
@@ -159,7 +156,7 @@ div.toggle_btn {
   display: none;
 }
 
-/* INDEX */
+/**************************** INDEX ****************************/
 /* INTRODUCTION */
 .card:hover .img-top {
   display: inline;
@@ -457,7 +454,7 @@ div.intro_content {
   color: #9ae9e3;
 }
 
-/* SKILLS AND TOOLS */
+/**************************** SKILLS AND TOOLS ****************************/
 /* icon */
 
 i.bx.bxs-download {
@@ -534,7 +531,7 @@ div.skills-section.row {
   margin-top: 2px;
 }
 
-/* CONTACT ME */
+/**************************** CONTACT ME ****************************/
 .contact {
   padding-bottom: 0;
 }
@@ -545,21 +542,6 @@ div.skills-section.row {
 
 .contact_mail {
   background-color: #000000;
-  /* background-image: repeating-linear-gradient(
-      45deg,
-      hsla(312, 0%, 63%, 0.05) 0px,
-      hsla(312, 0%, 63%, 0.05) 10px,
-      transparent 10px,
-      transparent 100px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      hsla(312, 0%, 63%, 0.05) 0px,
-      hsla(312, 0%, 63%, 0.05) 50px,
-      transparent 50px,
-      transparent 100px
-    ),
-    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%)); */
   border-top: #43fdf7 2px solid;
   border-bottom: #43fdf7  2px solid;
   padding: 2rem 4.5rem 2.5rem;
@@ -803,7 +785,7 @@ a.social_link {
   margin: 2rem;
 }
 
-/* projects */
+/**************************** projects ****************************/
 div.card-deck {
   margin: 3rem;
   display: grid;
@@ -825,7 +807,6 @@ div.card-deck {
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-  /* background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.607),rgba(0, 0, 0, 0.364)); */
 }
 
 .middle {
@@ -912,21 +893,6 @@ div.skill-icons i {
   display: flex;
   border-bottom: 2px solid #9ffffa;
   background-color: #000000;
-  /* background-image: repeating-linear-gradient(
-      45deg,
-      hsla(312, 0%, 63%, 0.05) 0px,
-      hsla(312, 0%, 63%, 0.05) 10px,
-      transparent 10px,
-      transparent 100px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      hsla(312, 0%, 63%, 0.05) 0px,
-      hsla(312, 0%, 63%, 0.05) 50px,
-      transparent 50px,
-      transparent 100px
-    ),
-    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%)); */
   padding: 1rem 1rem;
   flex-direction: column;
   align-items: center;
