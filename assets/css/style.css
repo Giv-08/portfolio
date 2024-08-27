@@ -101,7 +101,7 @@ ul.links li a:hover::before{
 
 #logo {
   width: 80px;
-  border-radius: 50%;
+  border-radius: 25%;
   margin: 0 1.5rem;
 }
 
