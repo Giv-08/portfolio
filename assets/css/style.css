@@ -347,7 +347,7 @@ div.section_container {
 	animation: float 5s ease-in-out infinite;
 }
 
-.avatar img:first-child {
+/* .avatar img:first-child {
   position: absolute;
   display:inline-block;
 }
@@ -360,7 +360,7 @@ div.section_container {
   animation-name: fade;
   animation-iteration-count: infinite;
   animation-duration: 8s;
-}
+} */
 
 @-webkit-keyframes fade {
   0% {opacity: 0;}
@@ -424,10 +424,10 @@ img#my_photo {
   border-radius: 5%;
 }
 
-img#my_photo_after {
+/* img#my_photo_after {
   width: 13vw;
   border-radius: 5%;
-}
+} */
 
 #introduction {
   width: 65vw;
